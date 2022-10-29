@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hiding Box</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+
+        $(document).ready(function() {
+            $('#btn').click(function() {
+                $('.box').hide();
+            })
+        })
+
+    </script>
+    <style>
+        .box {
+            border: 1px solid red;
+            background-color: red;
+            width: 80px;
+            height: 80px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <p>Hide the red box on the button click</p>
+    <button id="btn">Click me</button>
+    
+</body>
+</html>
